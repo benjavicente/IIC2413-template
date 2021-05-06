@@ -2,7 +2,7 @@
 # https://gist.github.com/2151128
 
 if( !array_key_exists('layout', get_defined_vars()) )
-  $layout = realpath(dirname(__DIR__).'/partials/default.php');
+  $layout = realpath(dirname(__DIR__).'/layouts/default.php');
 
 if( array_key_exists('HTTP_X_REQUESTED_WITH', $_SERVER) && $_SERVER['HTTP_X_REQUESTED_WITH'] == 'XMLHttpRequest' )
   $layout = null;
